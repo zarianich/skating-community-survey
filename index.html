@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skating Community</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Share your skating experience with us!</h1>
+    <p id="description">In an attempt to connect our local skating community, we are searching for people who would like to join us. If you are one of those people, please fill in your information below.</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Enter your name: <input id="name" name="name" type="text" required placeholder="John Doe"></label>
+        <label id="email-label" for="email">Enter your email: <input id="email" name="name" type="email" required placeholder="johndoe@email.com"></label>
+        <label id="number-label" for="number">How many years have you been skating <input id="number" name="number" type="number" required min="1" max="70" placeholder="1"></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">What is your preferred skating style? 
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Freestyle</option>
+            <option value="2">Vert</option>
+            <option value="3">Street</option>
+            <option value="4">Park</option>
+            <option value="5">Slalom</option>
+            <option value="6">Cruising</option>
+            <option value="7">Downhill</option>
+            <option value="8">Big Air</option>
+            <option value="9">Grass Surfing</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What's your stance?</legend>
+        <label for="regular"><input id="regular" type="radio" name="stance" checked value="regular"> Regular</label>
+        <label for="goofy"><input id="goofy" value="goofy" type="radio" name="stance"> Goofy</label>
+      </fieldset>
+        
+      <fieldset>
+        <legend>What would you be interested in? (Check all that apply)</legend>
+        <label for="meetups"><input id="meetups" name="meetups" type="checkbox" value="meetups"> Meetups</label>
+        <label for="skate-sessions"><input id="skate-sessions" name="skate-sessions" type="checkbox" value="skate-sessions"> Skate sessions</label>
+        <label for="volunteering"><input id="volunteering" name="volunteering" type="checkbox" value="volunteering"> Volunteering for construction/cleaning of skate spots</label>
+        <label for="competitions"><input id="competitions" name="competitions" type="checkbox" value="competitions"> Competitions</label>
+        <label for="training"><input id="training" name="training" type="checkbox" value="training"> Training</label>
+        <label for="sale"><input id="sale" name="sale" type="checkbox" value="sale"> Garage sales/Trading parts, clothes, etc.</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="bio">
+          Tell us more about yourself (optional):
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Your story here..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
